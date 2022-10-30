@@ -2095,6 +2095,7 @@ input[type=button]:disabled,
 #wrapper {
   background: #fff;
   padding-right: 23em;
+  z-index: 5;
 }
 
 /* Main */
@@ -2451,4 +2452,30 @@ input[type=button],
 .button {
     padding: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+body div .image.main {
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 100%;
+  padding: 10%;
+}
+
+.textcontainer {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+
+.dud {
+  color: #757575;
+}
