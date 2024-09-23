@@ -20,13 +20,25 @@ section, summary, time, mark, audio, video {
 }
 
 $main-color: #4acaa8;
-$actual-text-color: #212121;
-$text-color: #fff;
+$main-light: #b7eadc;
+$main-even-lighter: #d2f2e9;
+
+$titlebar: #d2f2e9;
+$subtitle: #c0c0c0;
+$banner-background-color: #212121;
+
+$content-background-color: #fff;
+
 $darker-text-color: #e4e4e4;
-$border-color: #f4f4f4;
-$undertone: #777;
-$darker-undertone: #888;
+
+$content-splitter-color: #f4f4f4;
+
+$header-color: #777;
+$sub-header-color: #888;
+$content-color: #777;
+
 $darker-text-color: #fafafa;
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -84,7 +96,7 @@ html {
 }
 
 body {
-  background: $text-color;
+  background: $content-background-color;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   -webkit-animation: none !important;
@@ -93,7 +105,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-  color: $darker-undertone;
+  color: $content-color;
   font-family: "Lato", sans-serif;
   font-size: 16pt;
   font-weight: 400;
@@ -112,7 +124,7 @@ a:hover {
 }
 
 strong, b {
-  color: $undertone;
+  color: $header-color;
   font-weight: 700;
 }
 
@@ -125,7 +137,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $undertone;
+  color: $header-color;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 0.5625em 0;
@@ -175,7 +187,7 @@ sup {
 
 hr {
   border: 0;
-  border-bottom: solid 2px $border-color;
+  border-bottom: solid 2px $content-splitter-color;
   margin: 2.25em 0;
 }
 hr.major {
@@ -190,9 +202,9 @@ blockquote {
 }
 
 code {
-  background: #555;
+  background: $sub-header-color;
   border-radius: 5px;
-  color: $text-color;
+  color: $content-background-color;
   font-family: "Source Code Pro", monospace;
   font-size: 0.9em;
   margin: 0 0.25em;
@@ -1375,7 +1387,7 @@ section.special, article.special {
 }
 
 header p {
-  color: #aaa;
+  color: $sub-header-color;
   position: relative;
   margin: 0 0 1.6875em 0;
 }
@@ -1401,7 +1413,7 @@ header.major h2 {
   font-size: 3.5em;
 }
 header.major h2 + p {
-  color: $undertone;
+  color: $header-color;
   font-size: 1.75em;
   font-weight: 700;
   margin-top: -0.75em;
@@ -1631,7 +1643,7 @@ ul.alt {
   padding-left: 0;
 }
 ul.alt li {
-  border-top: solid 2px $border-color;
+  border-top: solid 2px $content-splitter-color;
   padding: 0.5em 0;
 }
 ul.alt li:first-child {
@@ -1763,7 +1775,7 @@ ul.feature-icons li:before {
 ul.feature-icons li:before {
   background: $main-color;
   border-radius: 100%;
-  color: $text-color;
+  color: $content-background-color;
   display: block;
   height: 2.5em;
   left: 0;
@@ -1802,7 +1814,7 @@ table {
   width: 100%;
 }
 table tbody tr {
-  border: solid 2px $border-color;
+  border: solid 2px $content-splitter-color;
   border-left: 0;
   border-right: 0;
 }
@@ -1813,7 +1825,7 @@ table td {
   padding: 0.75em 0.75em;
 }
 table th {
-  color: $undertone;
+  color: $header-color;
   font-size: 0.9em;
   font-weight: 700;
   padding: 0 0.75em 0.75em 0.75em;
@@ -1848,7 +1860,7 @@ table.alt tfoot {
 
 /* Features */
 .features article {
-  border-top: solid 3px $border-color;
+  border-top: solid 3px $content-splitter-color;
   margin-bottom: 2.25em;
   padding-top: 2.25em;
 }
@@ -1886,7 +1898,7 @@ table.alt tfoot {
   -ms-justify-content: space-between;
   justify-content: space-between;
   background: $main-color;
-  color: #d2f2e9;
+  color: white;
   height: 100%;
   overflow-y: auto;
   position: fixed;
@@ -1896,19 +1908,19 @@ table.alt tfoot {
   right: 0;
 }
 #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-  color: $text-color;
+  color: $content-background-color;
 }
 #header h1 a, #header h2 a, #header h3 a, #header h4 a, #header h5 a, #header h6 a {
-  color: $text-color;
+  color: $content-background-color;
 }
 #header header p {
-  color: #b7eadc;
+  color: $main-even-lighter;
 }
 #header a {
-  color: #d2f2e9;
+  color: $main-even-lighter;
 }
 #header a:hover {
-  color: $text-color !important;
+  color: $content-background-color !important;
 }
 #header > header {
   -ms-flex-shrink: 0;
@@ -1925,7 +1937,7 @@ table.alt tfoot {
   margin: 0;
 }
 #header > header p {
-  color: #d2f2e9;
+  color: $main-even-lighter;
   font-style: italic;
   margin: 1em 0 0 0;
 }
@@ -1941,7 +1953,7 @@ table.alt tfoot {
   margin: 0;
 }
 #header > footer .icons li a {
-  color: #b7eadc;
+  color: $main-light;
 }
 #header > nav {
   -moz-flex-grow: 1;
@@ -1961,13 +1973,13 @@ table.alt tfoot {
 #header > nav ul li a {
   transition: none;
   border: 0;
-  color: $text-color !important;
+  color: $content-background-color !important;
   display: block;
   padding: 0.85em 0;
   text-decoration: none;
 }
 #header > nav ul li a.active {
-  background: $text-color;
+  background: $content-background-color;
   color: $main-color !important;
 }
 #header > nav ul li:first-child {
@@ -1976,14 +1988,14 @@ table.alt tfoot {
 
 /* Wrapper */
 #wrapper {
-  background: $text-color;
+  background: $content-background-color;
   padding-right: 23em;
   z-index: 5;
 }
 
 /* Main */
 #main > section {
-  border-top: solid 6px $border-color;
+  border-top: solid 6px $content-splitter-color;
 }
 #main > section > .container {
   padding: 6em 0 4em 0;
@@ -1996,7 +2008,7 @@ table.alt tfoot {
 #footer {
   background: $darker-text-color;
   border-top: 0;
-  color: #c0c0c0;
+  color: $subtitle;
   overflow: hidden;
   padding: 4em 0 2em 0;
 }
@@ -2126,12 +2138,12 @@ table.alt tfoot {
     top: 0;
     width: 100%;
     z-index: 10001;
-    background: #222;
-    color: $text-color;
+    background: $titlebar;
+    color: $content-background-color;
     min-width: 320px;
   }
   #titleBar .title {
-    color: $text-color;
+    color: $content-background-color;
     display: block;
     font-weight: 700;
     height: 44px;
@@ -2168,7 +2180,7 @@ table.alt tfoot {
   }
   #titleBar .toggle:before {
     background: $main-color;
-    color: $text-color;
+    color: $content-background-color;
     content: "\f0c9";
     display: block;
     font-size: 18px;
@@ -2340,7 +2352,7 @@ input[type=button],
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 body div .image.main {
   font-family: 'Roboto Mono', monospace;
-  background: $actual-text-color;
+  background: $banner-background-color;
   height: 100%;
   padding: 10%;
 }
@@ -2360,7 +2372,7 @@ body div .image.main {
 }
 
 .dud {
-  color: $darker-undertone;
+  color: $content-color;
 }
 
 .timeline {
