@@ -55,8 +55,10 @@ class TextScramble {
 
 const phrases = [
   'Welcome',
-  'This is my portfolio.',
-  'Hope you enjoy your stay :)'
+  'This is my resume.',
+  'I graduate soon, looking for a career.',
+  'but other than that',
+  'I hope you enjoy your stay.'
 ]
 
 const el = document.querySelector('.text')
