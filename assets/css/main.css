@@ -2353,3 +2353,13 @@ body div .image.main {
 .dud {
   color: #757575;
 }
+
+.timeline {
+  float: right;
+  font-weight: 100;
+}
+
+.sub-header {
+  font-weight: 100;
+  margin-bottom: 0;
+}
