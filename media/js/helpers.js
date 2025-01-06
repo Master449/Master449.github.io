@@ -1,6 +1,6 @@
 
 function showtab(tabName) {
-     var index;
+    var index;
     var tabs = document.getElementsByClassName("tab");
     console.log(tabs);
     for (i = 0; i < tabs.length; i++) {

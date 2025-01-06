@@ -21,7 +21,7 @@
         </ul>
     </nav>
     <div class="tab" id="home">
-        <div class="picture-right">
+        <div class="picture right">
             <figure><img src="media/img/me.avif" alt="" srcset="">
                 <figcaption>Hey, thats me!</figcaption>
             </figure>
@@ -41,12 +41,12 @@
             weighs in at <i id="size">47.3 Kb.</i> This website can fit <i id="iphone">100x</i> times in an iPhone 15
             HEIF photo. I also wanted no ads, analytics, tracking, and finger printing. And any JavaScript
             is super minimal. This was also a project to test how lean I can make any assets this site needs. Adding
-            onto that, the entire website is loaded currently. The navbar up there are CSS tabs, not links.</p>
+                onto that, the entire website is loaded currently. The navbar up there are CSS tabs, not links. If you're curious about more of the stats, you can check them out <button onclick="showtab('stats')">here</button></p>
         <h1>Projects</h1>
         <div class="container">
             <div class="container-item">
                 <a href="https://github.com/467Group3A/rimjobs" target="_blank">
-                    <div class="picture-left">
+                    <div class="picture left">
                         <figure><img src="media/img/autostore.avif" alt=""></figure>
                     </div>
                     <div class="tleft">
@@ -64,7 +64,7 @@
 
             <div class="container-item">
                 <a href="https://github.com/Master449/Master449.github.io" target="_blank">
-                    <div class="picture-left">
+                    <div class="picture left">
                         <figure><img src="media/img/portfolio-website.avif" alt=""></figure>
                     </div>
                     <div class="tleft">
@@ -78,7 +78,7 @@
 
             <div class="container-item">
                 <a href="https://github.com/Master449/nix-homelab" target="_blank">
-                    <div class="picture-left">
+                    <div class="picture left">
                         <figure><img src="media/img/homelab.avif" alt=""></figure>
                     </div>
                     <div class="tleft">
@@ -165,6 +165,60 @@
     </div>
     <div class="tab" id="links" style="display: none;">
         <h1>Links</h1>
+    </div>
+    <div class="tab" id="stats" style="display: none;">
+        <h1>Previous Resume</h1>
+        <h3>Lighthouse</h3>
+        <table class="lighthouse">
+            <tr class="num">
+                <td>80</td>
+                <td>63</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Performance</td>
+                <td>Accessibility</td>
+                <td>Best Practices</td>
+            </tr>
+        </table>
+        <h3>CatchPoint Webpage Peformance Test</h3>
+        <p>Motorola G (Gen 4) from Mumbai (3G Network, 1.6Mbps down, 300ms latency)</p>
+        <table>
+            <tr>
+                <td>Time to First Byte</td>
+                <td>Start Render</td>
+                <td>First Contentful Paint</td>
+                <td>Speed Index</td>
+                <td>Largest Contentful Paint</td>
+                <td>Cumulative Layout Shift</td>
+                <td>Total Blocking Time</td>
+                <td>Page Weight</td>
+                <td>Carbon Footprint</td>
+            </tr>
+            <tr class="num">
+                <td>0.195s</td>
+                <td>1.000s</td>
+                <td>1.034s</td>
+                <td>1.161s</td>
+                <td>1.461s</td>
+                <td>0.009</td>
+                <td>0.000s</td>
+                <td>602Kb</td>
+                <td>0.22g</td>
+            </tr>
+            <tr>
+                <td>When did content start downloading?</td>
+                <td>When did pixels first appear</td>
+                <td>How son did text and images follow?</td>
+                <td>How soon did the page look usable?</td>
+                <td>When did the largest element finish?</td>
+                <td>How much did the design shift?</td>
+                <td>Was the main thread blocked?</td>
+                <td>Page size</td>
+                <td>Eco-friendly scale</td>
+            </tr>
+        </table>
     </div>
     <script type="text/javascript" src="media/js/helpers.js"></script>
 </body>
