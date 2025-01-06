@@ -44,12 +44,6 @@ $openQuoteColor: #666;
   height: 100%;
 }
 
-.me {
-  width: 200px;
-  float: right;
-  padding-top: 5%;
-}
-
 body {
   font-family: "Open Sans", Arial;
   color: $bodyTextColor;
@@ -87,40 +81,23 @@ a {
   }
 }
 
-small {
-  font-size: 0.4em;
-}
-
 p.st {
   margin-top: -1em;
 }
 
-
-.picture-left {
+.left {
   float: left;
-  width: 40%;
-  overflow: hidden;
   margin-right: 1em;
-
-  img {
-    width: 100%;
-  }
-
-  figure {
-    margin: 10px;
-
-    figcaption {
-      font-size: 0.7em;
-      text-align: left;
-    }
-  }
 }
 
-.picture-right {
+.right {
   float: right;
+  margin-left: 1em;
+}
+
+.picture {
   width: 40%;
   overflow: hidden;
-  margin-left: 1em;
 
   img {
     width: 100%;
@@ -131,7 +108,7 @@ p.st {
 
     figcaption {
       font-size: 0.7em;
-      text-align: right;
+      text-align: center;
     }
   }
 }
@@ -165,6 +142,7 @@ ul {
   li {
     display: inline;
     flex-grow: 1;
+    text-align: center;
 
     a {
       height: 100%;
@@ -179,12 +157,11 @@ ul {
     text-align: left;
   }
 
-  .picture-left {
-    float: none;
-    width: inherit;
+  a {
+    text-decoration: none;
   }
 
-  .picture-right {
+  .picture {
     float: none;
     width: inherit;
   }
@@ -192,22 +169,5 @@ ul {
   div.tleft {
     float: none;
     width: inherit;
-  }
-
-  blockquote {
-    span {
-      width: 80%;
-    }
-
-    author {
-      padding-top: 1em;
-      width: 80%;
-      margin-left: 15%;
-
-      &::before {
-        content: "";
-        margin-right: inherit;
-      }
-    }
   }
 }
