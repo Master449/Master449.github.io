@@ -18,16 +18,6 @@ $openQuoteColor: #666;
   color: white !important;
 }
 
-@mixin light() {
-  html {
-    background-color: $bodybgColor;
-  }
-
-  .sec {
-    border-left: 1px dashed #000;
-  }
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -41,39 +31,6 @@ $openQuoteColor: #666;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
-}
-
-@mixin contrast() {
-  /* Accessibility */
-  $darkenBy: 25%;
-
-  body {
-    color: $dark-mode-bg;
-  }
-
-  blockquote {
-    color: darken($blockQuoteColor, $darkenBy);
-
-    &::before {
-      color: darken($openQuoteColor, $darkenBy);
-    }
-  }
-
-  a {
-    color: #03F;
-
-    &:visited {
-      color: #7d013e;
-    }
-  }
-
-  span.wr {
-    color: #800;
-  }
-
-  span.mfw {
-    color: darken($mainColor, $darkenBy*.3);
-  }
 }
 
 .work {
@@ -128,15 +85,6 @@ a {
   &:visited {
     color: $linkVisitedColor;
   }
-}
-
-@mixin noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 small {
@@ -263,115 +211,3 @@ ul {
     }
   }
 }
-
-// span.visited{
-//   color: $linkVisitedColor;
-// }
-
-// span.visited-maroon{
-//   color:  #85144b;
-// }
-
-// span.wr{
-//   color: $wrongColor;
-//   font-weight: 600;
-//   text-decoration: underline;
-// }
-
-// button.cont-inv {
-//   cursor: pointer;
-//   border-radius: 2px;
-//   position: fixed;
-//   right: 10px;
-//   font-size: 0.8em;
-//   text-decoration: underline;
-//   border: 0px;
-//   padding: 2px 5px 2px 5px;
-// }
-
-// #contrast{
-//   color: #000;
-//   top: 10px;
-//   @include noselect
-// }
-
-
-// #invmode{
-//   color: #FFF;
-//   background-color: #000;
-//   position: fixed;
-//   top: 34px;  
-//   text-decoration: underline;
-//   @include noselect
-// }
-
-// @media screen and (max-width:1080px) {
-
-//   #contrast {
-//     position: absolute;
-//   }
-
-//   #invmode {
-//     position: absolute;
-//   }
-// }
-
-// span.sb{
-//   cursor: not-allowed;
-//   color: $blue;
-// }
-
-// span.sv{
-//   cursor: not-allowed;
-//   color: $violet;
-// }
-
-// span.foufoufou{
-//   &::before{
-//     content: "";
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     margin-left: 0.2em;
-//     margin-right: 0.2em;
-//     background-color: #444;
-//   }
-//   color: #444;
-//   font-weight: bold;
-// }
-
-// span.foufivfoufivfoufiv {
-//   &::before{
-//     content: "";
-//     display: inline-block;
-//     width: 1em;
-//     height: 1em;
-//     margin-left: 0.2em;
-//     margin-right: 0.2em;
-//     background-color: #454545;
-//   }
-//   color: #454545;
-//   font-weight: bold;
-// }
-
-// span.mfw{
-//   color: $mainColor;
-// }
-
-// a.kopimi{
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   img.kopimi{
-//     display: block;
-//     height: 2em;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
-
-// p.fakepre{
-//   font-family: monospace;
-//   font-size: 0.9em;
-// }
