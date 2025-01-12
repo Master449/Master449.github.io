@@ -133,8 +133,18 @@ div.tleft {
 ul {
   li {
     img {
-      height: 1em;
+      height: 2em;
     }
+  }
+}
+
+#links {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 32%;
+    border-radius: 20px;
   }
 }
 
@@ -158,6 +168,35 @@ ul {
   }
 }
 
+#stats table {
+  width: 100%;
+  tr {
+    width: 100%;
+    text-align: center;
+  }
+
+  .num td {
+    font-size: 24pt;
+  }
+
+  .subtext {
+    font-size: 10pt;
+  }
+
+  .maintext {
+    font-weight: bold;
+    font-size: 14pt;
+  }
+
+  #hi {
+    color: green;
+  }
+
+  #lo {
+    color: red;
+  }
+}
+
 @media screen and (max-width: 500px) {
 
   body {
@@ -176,5 +215,14 @@ ul {
   div.tleft {
     float: none;
     width: inherit;
+  }
+
+  #links {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   }
 }
