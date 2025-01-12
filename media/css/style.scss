@@ -1,0 +1,180 @@
+$bodybgColor: #fefefe;
+$bodyTextColor: #454545;
+$dark-mode-bg: #181a1b;
+// Link Colors
+$linkColor: #07A;
+$linkVisitedColor: #941352;
+$linkVisitedInvertedColor: #ac5a82;
+// ===============
+
+$wrongColor: #c0392b;
+$blue: #0000EE;
+$violet: #551A8B;
+$mainColor: #730000; 
+$blockQuoteColor: #456;
+$openQuoteColor: #666;
+
+#stats {
+  table {
+    .num {
+    }
+  }
+}
+
+.container-item a {
+  color: white !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: normal;
+  align-items: normal;
+}
+
+.container .container-item>* {
+  display: block;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+}
+
+.work {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.sec {
+  padding-left: 2%;
+  border-left: 1px dashed#FFF;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", Arial;
+  color: $bodyTextColor;
+  font-size: 16px;
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 1em;
+  line-height: 1.4;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-y: scroll;
+  background-color: $dark-mode-bg;
+  color: white;
+}
+
+i {
+  color: $wrongColor;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: $linkColor;
+  border: none !important;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+a {
+  color: $linkColor;
+
+  &:visited {
+    color: $linkVisitedColor;
+  }
+}
+
+p.st {
+  margin-top: -1em;
+}
+
+.left {
+  float: left;
+  margin-right: 1em;
+}
+
+.right {
+  float: right;
+  margin-left: 1em;
+}
+
+.picture {
+  width: 40%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 10px;
+
+    figcaption {
+      font-size: 0.7em;
+      text-align: center;
+    }
+  }
+}
+
+div.tleft {
+  float: left;
+  width: 55%;
+  height: 100%;
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+ul {
+  li {
+    img {
+      height: 1em;
+    }
+  }
+}
+
+.navi ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: inline-flex;
+  flex-grow: 1;
+
+  li {
+    display: inline;
+    flex-grow: 1;
+    text-align: center;
+
+    a {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .picture {
+    float: none;
+    width: inherit;
+  }
+
+  div.tleft {
+    float: none;
+    width: inherit;
+  }
+}
