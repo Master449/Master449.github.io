@@ -6,221 +6,67 @@
     <title>David Flowers II</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
-    <link rel="stylesheet" type="text/css" href="media/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navi">
-        <ul>
-            <li><button onclick="showtab('home')">Home</button></li>
-            <li><button onclick="showtab('prof')">Professional History</button></li>
-            <li><button onclick="showtab('lab')">Homelab</button></li>
-            <li><button onclick="showtab('links')">Links</button></li>
-        </ul>
-    </nav>
-    <div class="tab" id="home">
-        <div class="picture right">
-            <figure><img src="media/img/me.avif" alt="" srcset="">
-                <figcaption>Hey, thats me!</figcaption>
-            </figure>
-        </div>
-        <h1>Hello there.</h1>
-        <p class="st">My name is David Flowers II.</p>
-        <p class="st">Currently wrapping up my Bachelors in Computer Science.</p>
-        <h2>Personal History</h2>
-        <p class="content">I have always been fueled by a lifelong love of computers and how they operate. Ever since
-            I was 6 years old playing Toontown on my Moms Dell Dimension 2400. Despite the many viruses and headaches I
-            would come by, I always pushed forward learning and exploring what they had to offer. I specced out my first
-            machine when I was 13, started dailying various Linux distributions when I was 16, and currently have a 42U
-            server rack operating in my basement.</p>
-        <h2>Why does this resume website look like this?</h2>
-        <p class="content">I know a lot about website design but I wanted this website to be fast, and as minimal
-            as possible. I wanted to replicate parts of the internet that I remember growing up. The site currently
-            weighs in at <i id="size">47.3 Kb.</i> This website can fit <i id="iphone">100x</i> times in an iPhone 15
-            HEIF photo. I also wanted no ads, analytics, tracking, and finger printing. And any JavaScript
-            is super minimal. This was also a project to test how lean I can make any assets this site needs. Adding
-                onto that, the entire website is loaded currently. The navbar up there are CSS tabs, not links. If you're curious about more of the stats, you can check them out <button onclick="showtab('stats')">here</button></p>
-        <h1>Projects</h1>
         <div class="container">
-            <div class="container-item">
-                <a href="https://github.com/467Group3A/rimjobs" target="_blank">
-                    <div class="picture left">
-                        <figure><img src="media/img/autostore.avif" alt=""></figure>
-                    </div>
-                    <div class="tleft">
-                        <h3>Auto Parts E-Commerce</h3>
-                        <p>A Group Project for CSCI 467: Software Engineering. For this project we we're given a purpose;
-                            Ours
-                            being an Online Auto Parts Store. This project had a few constraints, like a legacy database
-                            that
-                            was read only, to a remote Credit Card Authorization System. Other than that we had total
-                            freedom.
-                        </p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="container-item">
-                <a href="https://github.com/Master449/Master449.github.io" target="_blank">
-                    <div class="picture left">
-                        <figure><img src="media/img/portfolio-website.avif" alt=""></figure>
-                    </div>
-                    <div class="tleft">
-                        <h3>Personal Website (this one)</h3>
-                        <p>This website was made during my time at NIU. It functions as a resume I can give out, assuming I
-                            do not have any on me. It is also described a bit more in the
-                            paragraphs above.</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="container-item">
-                <a href="https://github.com/Master449/nix-homelab" target="_blank">
-                    <div class="picture left">
-                        <figure><img src="media/img/homelab.avif" alt=""></figure>
-                    </div>
-                    <div class="tleft">
-                        <h3>NixOS Homelab</h3>
-                        <p>Recently I have been diving into Nix and NixOS. My homelab runs off of NixOS, this includes a
-                            Dashboard, Custom API for Reolink cameras, Speed Test tracker, Uptime monitoring, and a Jellyfin
-                            Media server.</p>
-                    </div>
-                </a>
-            </div>
+            <h1>Hello there.</h1>
+            <h3>Please choose an option.</h3>
+            <a class="option fancy" href="https://davidflowers.dev/pretty-resume.html">Fancy Resume<i><br>For fancier looks</i></a>
+            <a class="option fast" href="https://davidflowers.dev/fast-resume.html">Fast Resume<i><br>For slower connections</i></a>
         </div>
-    </div>
-
-    <div class="tab" id="prof" style="display: none;">
-        <h1>Skills</h1>
-        <div class="skill-set">
-            <div class="sec">
-                <h3>Programming Languages</h3>
-                <p>Python, Java, JavaScript and TypeScript, PHP, LaTeX, as well as Bash and PowerShell</p>
-            </div>
-            <div class="sec">
-                <h3>Technologies</h3>
-                <p>Android Studio, Microsoft O365, GitLab and GitHub, Cherwell</p>
-            </div>
-            <div class="sec">
-                <h3>Frameworks</h3>
-                <p>Vue, Bootstrap and some minor React</p>
-            </div>
-        </div>
-
-        <h1>Education History</h1>
-        <div class="prof-div">
-            <div class="sec">
-                <h3>Bachelor's of Computer Science</h3>
-                <p class="st work">Northern Illinois University</p>
-                <p class="st work">August 2021 - Present</p>
-                <p></p>
-            </div>
-            <div class="sec">
-                <h3>Associate's of Science</h3>
-                <p class="st work">Kishwaukee Community College</p>
-                <p class="st work">August 2018 - May 2021</p>
-                <p></p>
-            </div>
-            <div class="sec">
-                <h3>Computer Info Systems and Web Development</h3>
-                <p class="st work">Kishwaukee Education Consortium</p>
-                <p class="st work">August 2016 - May 2018</p>
-                <p></p>
-            </div>
-        </div>
-
-        <h1>Work History</h1>
-        <div class="work-div">
-            <div class="sec">
-                <h3>Student Technician Manager</h3>
-                <p class="st work">Northern Illinois University</p>
-                <p class="st work">June 2024 - Present</p>
-                <p>Experienced in training new staff on troubleshooting and operating procedures.
-                    Streamlined help desk response times and enhanced service quality. Skilled in managing
-                    IT Technicians on projects and ticketing systems for efficient issue resolution.</p>
-            </div>
-            <div class="sec">
-                <h3>ResTech Computer Technician</h3>
-                <p class="st work">Northern Illinois University</p>
-                <p class="st work">May 2022 - Present</p>
-                <p>Delivered help desk support to over 200 staff and 15,000 students using GitLab.
-                    Developed a custom Discord bot and tailored GitLab features to enhance team operations.
-                    Modernized the team's knowledge base with Hugo for improved documentation.</p>
-            </div>
-
-            <div class="sec">
-                <h3>Cashier Clerk</h3>
-                <p class="st work">Northern Illinois University</p>
-                <p class="st work">August 2017 - May 2022</p>
-                <p>Strong organizational, communication and collaboration skills with a proven
-                    ability to handle confidential information as well as worked overnights assisting the Scan
-                    Coordinator with high-volume scanning projects.</p>
-            </div>
-        </div>
-    </div>
-    <div class="tab" id="lab" style="display: none;">
-        <h1>Homelab</h1>
-    </div>
-    <div class="tab" id="links" style="display: none;">
-        <h1>Links</h1>
-    </div>
-    <div class="tab" id="stats" style="display: none;">
-        <h1>Previous Resume</h1>
-        <h3>Lighthouse</h3>
-        <table class="lighthouse">
-            <tr class="num">
-                <td>80</td>
-                <td>63</td>
-                <td>100</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>Performance</td>
-                <td>Accessibility</td>
-                <td>Best Practices</td>
-            </tr>
-        </table>
-        <h3>CatchPoint Webpage Peformance Test</h3>
-        <p>Motorola G (Gen 4) from Mumbai (3G Network, 1.6Mbps down, 300ms latency)</p>
-        <table>
-            <tr>
-                <td>Time to First Byte</td>
-                <td>Start Render</td>
-                <td>First Contentful Paint</td>
-                <td>Speed Index</td>
-                <td>Largest Contentful Paint</td>
-                <td>Cumulative Layout Shift</td>
-                <td>Total Blocking Time</td>
-                <td>Page Weight</td>
-                <td>Carbon Footprint</td>
-            </tr>
-            <tr class="num">
-                <td>0.195s</td>
-                <td>1.000s</td>
-                <td>1.034s</td>
-                <td>1.161s</td>
-                <td>1.461s</td>
-                <td>0.009</td>
-                <td>0.000s</td>
-                <td>602Kb</td>
-                <td>0.22g</td>
-            </tr>
-            <tr>
-                <td>When did content start downloading?</td>
-                <td>When did pixels first appear</td>
-                <td>How son did text and images follow?</td>
-                <td>How soon did the page look usable?</td>
-                <td>When did the largest element finish?</td>
-                <td>How much did the design shift?</td>
-                <td>Was the main thread blocked?</td>
-                <td>Page size</td>
-                <td>Eco-friendly scale</td>
-            </tr>
-        </table>
-    </div>
-    <script type="text/javascript" src="media/js/helpers.js"></script>
 </body>
+<style>
+    .container {
+        font-family: "Roboto", serif;
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        vertical-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 
-</html>
+    h1, h3 {
+        text-align: center;
+    }
+
+    .option {
+        width: 45%;
+        border: 2px solid blue;
+        border-radius: 20px;
+        height: 20%;
+        text-align: center;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 2% 0;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+    }
+
+    i {
+        font-size: 16px;
+    }
+
+    .fancy {
+        float: left;
+    }
+
+    .fast {
+        float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+        .container {
+            width: 95%;
+        }
+    }
+</style>
