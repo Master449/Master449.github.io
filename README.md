@@ -21,8 +21,8 @@ sass styles.scss --style compressed
     - [X] Education
     - [X] Professional History
     - [X] Skills
-    - [ ] Links
+    - [ ] Links (Started)
   - [ ] New Sections
-    - [ ] Homepage
+    - [X] Homepage
     - [ ] Homelab
-    - [ ] Hobbies
+    - [ ] Hobbies (?)
