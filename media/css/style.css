@@ -1,5 +1,5 @@
 .container-item a {
-  color: white !important;
+  color: #222 !important;
 }
 
 .container {
@@ -24,7 +24,7 @@
 
 .sec {
   padding-left: 2%;
-  border-left: 1px dashed #FFF;
+  /* border-left: 1px dashed #FFF; */
   height: 100%;
 }
 
@@ -48,7 +48,7 @@ i {
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0) !important;
+  /* background-color: rgba(0, 0, 0, 0) !important; */
   color: #07A;
   border: none !important;
   text-decoration: underline;
@@ -96,9 +96,6 @@ div.tleft {
   float: left;
   width: 55%;
   height: 100%;
-}
-div.tleft *:first-child {
-  margin-top: 0;
 }
 
 ul li img {
@@ -179,4 +176,10 @@ ul li img {
     margin-right: auto;
     width: 50%;
   }
+  div.tleft *:first-child {
+  /* margin-top: 0; */
+}
+div.tleft {
+  float: none;
+}
 }

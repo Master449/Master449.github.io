@@ -7,6 +7,7 @@ function showtab(tabName) {
         tabs[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
+    return false;
 }
 
 var size;
