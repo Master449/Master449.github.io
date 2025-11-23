@@ -3,20 +3,25 @@
     font-family: "Pixelated MS Sans Serif";
     font-style: normal;
     font-weight: 400;
-    src: url(W95font.otf);
+    src: url(AtkinsonHyperlegibleNext-Regular.otf);
 }
 
 @font-face {
     font-family: "Pixelated MS Sans Serif";
     font-style: normal;
     font-weight: 700;
-    src: url(W95font-Bold.otf);
+    src: url(AtkinsonHyperlegibleNext-Bold.otf);
+}
+
+html {
+    background-color: #018281;
 }
 
 body {
     color: #222;
     font-family: Arial;
-    font-size: 14px
+    font-size: 14px;
+    background-color: #018281;
 }
 
 .title-bar,
